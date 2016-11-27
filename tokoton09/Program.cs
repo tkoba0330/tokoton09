@@ -10,6 +10,11 @@ namespace tokoton09
     {
         static void Main(string[] args)
         {
+            // 32Bitでビルドされると実行時にオーバーフローが発生する。
+            IntPtr a = (IntPtr)0x123456789;
+            Console.WriteLine(a);
+
+            Console.ReadLine();
         }
     }
 }
